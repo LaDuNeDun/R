@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level Up Birthday</title>
+
+  <!-- Font Pixel -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="space">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="shooting-stars"></div>
+  <div class="planet planet1"></div>
+  <div class="planet planet2"></div>
+  <div class="moon"></div>
+</div>
+
+<div class="start-screen">
+  <button id="openBtn">🎁 RESULT </button>
+</div>
+
+<div class="card hidden" id="card">
+  <!-- UI BAR -->
+  <div class="ui-bar">
+    <span>PLAYER PROFILE</span>
+    <div class="hp-bar"><div class="hp-fill"></div></div>
+  </div>
+
+  <div class="title">🎮 LEVEL UP!</div>
+
+  <div class="foto">
+    <img src="sound/cat.gif" alt="foto">
+  </div>
+
+  <div class="name">Happy Birthday, Ace!</div>
+
+  <ul class="stats">
+    <li>+1 Age</li>
+    <li>+<span id="happy">0</span> Happiness</li>
+    <li>+<span id="str">0</span> Strength</li>
+    <li>+<span id="luck">0</span> Luck</li>
+  </ul>
+
+  <!-- EXP BAR -->
+  <div class="bar">
+    <div class="fill"></div>
+    <span class="lv" id="lv">LV 20</span>
+    <span class="exp-text">EXP + 999</span>
+  </div>
+
+  <button id="partyBtn" class="party-btn">👥 PARTY</button>
+
+  <div class="footer">– Player 2: Rizki</div>
+</div>
+
+<!-- Party Card -->
+<div class="card hidden" id="partyCard">
+  <div class="ui-bar">
+    <span>PARTY TEAM</span>
+    <span class="hp">CHEMISTRY</span>
+  </div>
+
+  <div class="party-container">
+    <div class="party-member single">
+      <img src="sound/duck.gif">
+      <div class="party-name">Dune</div>
+      <div class="chem-bar">
+        <div class="chem-fill" id="chem1"></div>
+      </div>
+      <div class="chem-text" id="chemLv1">LV 10</div>
+    </div>
+  </div>
+
+  <button id="backBtn" class="party-btn">BACK</button>
+  <button id="nextPartyBtn" class="party-btn">NEXT</button>
+</div>
+
+<!-- FINAL CARD -->
+<div class="card hidden" id="finalCard">
+  <div class="ui-bar">
+    <span>SECRET CARD</span>
+    <span>MYSTERY</span>
+  </div>
+
+  <div class="title">🎉 Special Message 🎉</div>
+
+  <div class="finalText">
+    Happy Birthday Ace! <br><br>
+    Selamat Ulang Tahun ya 🎉, Semoga diusia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, dan kemudahan dalam setiap langkah yang kamu jalanin. Terima kasih sudah menjadi teman yang baik dan selalu membawa hal positif bagi orang orang disekitarmu. Semoga semua harapan dan impian yang sedang kamu perjuangkan bisa tercapai satu per satu
+  </div>
+
+  <button id="backToPartyBtn" class="party-btn">BACK</button>
+  <button id="nextFinalBtn" class="party-btn">NEXT</button>
+</div>
+
+<!-- REWARD CARD -->
+<div class="card hidden" id="rewardCard">
+  <div class="ui-bar">
+    <span>REWARD UNLOCK</span>
+    <span>SECRET</span>
+  </div>
+
+  <div class="title">🎁 Mystery Chest 🎁</div>
+
+  <div class="chest" id="chestBox">
+  <img id="chestImage" src="sound/gift.png" alt="chest">
+</div>
+
+  <div class="footer">Tap the chest to reveal reward!</div>
+</div>
+<div
+
+<div class="sparkles"></div>
+
+<audio id="LevelSound" src="sound/sunovia-level-up-289723.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
