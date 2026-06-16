@@ -533,7 +533,7 @@ body::after{
   white-space:normal;
   max-height:none;
   overflow-y:visible;
-  padding:20px 24px;
+  padding: 10px 12px;
   font-family: 'Press Start 2P', cursive;
   transform-origin:top left;
   transform: none;
@@ -546,7 +546,7 @@ body::after{
   margin:0;
   padding:0;
   line-height:0;
-  height:4px;
+  height: 10px;
 }
 .finalText br + br{
   height:4px;
@@ -585,4 +585,31 @@ body::after{
 
 #finalCard .ui-bar{
   margin-bottom:15px;
+}
+
+/* Mobile: make final card fill most of viewport to avoid external scrolling */
+@media (max-width:600px){
+  #finalCard{
+    width:96vw;
+    max-width:96vw;
+    height:auto;
+    max-height:92vh;
+    padding:18px;
+    overflow-y:auto;
+    border-radius:6px;
+  }
+  #finalCard .title{
+    font-size:14px;
+    margin-bottom:12px;
+  }
+  #finalCard .finalText{
+    font-size:12px;
+    line-height:1.35;
+    padding:8px 6px;
+  }
+  .card{
+    width:auto;
+    padding:12px;
+  }
+  .foto{ height:100px; }
 }
