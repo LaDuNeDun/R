@@ -425,44 +425,7 @@ body::after{
   .party-btn{ padding:14px 18px; font-size:12px; }
 }
 
-/* Stronger scaling for very small phones */
-@media (max-width:420px) {
-  .card{
-    width:96vw;
-    padding:24px;
-    border-width:4px;
-    box-shadow:0 0 28px #00ffe0, inset 0 0 20px #00ffe044;
-  }
-
-  /* Larger image area */
-  .foto{
-    height:200px;
-    margin:8px 0 18px 0;
-  }
-  .foto img{ max-height:180px; }
-
-  /* Increase typographic scale for readability */
-  .title{ font-size:20px; }
-  .name{ font-size:20px; }
-  .stats{ font-size:18px; }
-  .stats li{ margin:10px 0; }
-  .ui-bar{ font-size:14px; }
-
-  /* Bigger bars and labels */
-  .bar{ height:34px; }
-  .lv, .exp-text{ font-size:14px; }
-  .hp-bar{ width:180px; height:18px; }
-
-  /* Bigger buttons */
-  .party-btn{ padding:16px 22px; font-size:16px; }
-  #openBtn{ font-size:18px; padding:18px 26px; }
-
-  /* Make interactive elements easier to tap */
-  .party-btn, #openBtn, .card button{ min-height:48px; }
-
-  /* Slightly reduce background overflow so card feels larger in viewport */
-  body{ padding:18px 0; }
-}
+/* Stronger scaling for very small phones (moved below to avoid being overridden) */
 
 /* ===== CINEMATIC SHOOTING STARS ===== */
 
@@ -721,4 +684,43 @@ body::after{
     border-width:3px;
   }
   .chem-fill{ height:100%; }
+}
+
+/* Stronger scaling for very small phones */
+@media (max-width:420px) {
+  .card{
+    width:96vw;
+    padding:24px;
+    border-width:4px;
+    box-shadow:0 0 28px #00ffe0, inset 0 0 20px #00ffe044;
+  }
+
+  /* Larger image area */
+  .foto{
+    height:200px;
+    margin:8px 0 18px 0;
+  }
+  .foto img{ max-height:180px; }
+
+  /* Increase typographic scale for readability */
+  .title{ font-size:20px; }
+  .name{ font-size:20px; }
+  .stats{ font-size:18px; }
+  .stats li{ margin:10px 0; }
+  .ui-bar{ font-size:14px; }
+
+  /* Bigger bars and labels */
+  .bar{ height:34px; }
+  .lv, .exp-text{ font-size:14px; }
+  .hp-bar{ width:180px; height:18px; }
+
+  /* Bigger buttons */
+  .party-btn{ padding:16px 22px; font-size:16px; }
+  #openBtn{ font-size:18px; padding:18px 26px; }
+
+  /* Make interactive elements easier to tap */
+  .party-btn, #openBtn, .card button{ min-height:48px; }
+
+  /* Slightly reduce background overflow so card feels larger in viewport */
+  body{ padding:18px 0; }
 }
