@@ -400,6 +400,31 @@ body::after{
   to { opacity:1; }
 }
 
+/* Responsive: make the profile card larger on small screens */
+@media (max-width:480px) {
+  .card{
+    width:92vw;
+    padding:18px;
+    border-width:3px;
+  }
+
+  .foto{
+    height:160px;
+  }
+
+  .foto img{
+    max-height:140px;
+  }
+
+  .title{ font-size:14px; }
+  .name{ font-size:16px; }
+  .stats{ font-size:14px; }
+  .ui-bar{ font-size:12px; }
+  .bar{ height:26px; }
+  .lv, .exp-text{ font-size:12px; }
+  .party-btn{ padding:14px 18px; font-size:12px; }
+}
+
 /* ===== CINEMATIC SHOOTING STARS ===== */
 
 .shooting-stars{
@@ -635,4 +660,26 @@ body::after{
 
   /* Make interactive hit targets larger */
   .party-btn, #openBtn, .card button{ min-height:44px; }
+}
+
+/* Mobile: scale up progress bars for HP/EXP/CHEM */
+@media (max-width:600px){
+  .hp-bar{
+    width:160px;
+    height:16px;
+    border-width:3px;
+  }
+  .hp-fill{ box-shadow:0 0 10px #ff4d6d; }
+
+  .bar{
+    height:28px;
+    border-width:3px;
+  }
+  .fill{ height:100%; }
+
+  .chem-bar{
+    height:20px;
+    border-width:3px;
+  }
+  .chem-fill{ height:100%; }
 }
