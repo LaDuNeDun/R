@@ -555,6 +555,7 @@ body::after{
 /* Final card adjustments: slightly wider and rounded, keep responsive */
 #finalCard{
   width:520px;
+  height: auto;
   max-width:95vw;
   border-radius:6px;
   padding:30px 36px;
