@@ -533,7 +533,7 @@ body::after{
   white-space:normal;
   max-height:none;
   overflow-y:visible;
-  padding:10px 12px;
+  padding:20px 24px;
   font-family: 'Press Start 2P', cursive;
   transform-origin:top left;
   transform: none;
